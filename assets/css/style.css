@@ -1,0 +1,86 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+.clearfix {
+    clear: both;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: violet;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+header {
+  width: 100%;
+  display: inline-block;
+  font-size: 22px;
+  border-bottom: 1px solid violet;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.logo {
+  float: left;
+}
+
+nav {
+  float: left;
+}
+
+nav ul {
+
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+
+}
+
+nav ul li a:hover {
+
+}
+
+#main {
+
+}
+
+.navtech {
+  background-color: gray;
+}
+
+#navtechkat {
+  display: none;
+}
+
+#navtechalpha {
+  display: none;
+}
+
+footer {
+  margin-top: 200px;
+  border-top: 1px solid white;
+}
