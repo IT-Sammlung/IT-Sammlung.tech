@@ -5,8 +5,10 @@ if (isset($_SESSION['logged_in'])) {
   ?>
 
 <?php include_once('headeradmin.php') ?>
+<h3>Article Management</h3>
       <ul>
         <li><a href="addarticle.php">Artikel hinzufügen</a></li>
+        <li><a href="editarticle.php">Artikel bearbeiten</a></li>
         <li><a href="deletearticle.php">Artikel Löschen</a></li>
         <li><a href="logout.php">Logout</a></li>
       </ul>

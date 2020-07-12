@@ -2,13 +2,13 @@
 include_once("includes/datacon.php");
 include_once("includes/article.php");
 $article = new Article;
-$articles = $article->fetch_all();
+$articles = $article->articles_tech_desc();
  ?>
 
 
 
 <?php include_once('./includes/header.php') ?>
-
+<!--
     <div class="navtech">
       <div  id="kategorien"><a href="#">Kategorien</a></div>
       <div id="navtechkat">
@@ -19,22 +19,22 @@ $articles = $article->fetch_all();
         <a href="#">J</a>
       </div>
     </div>
-    <div class="latest">
-      <h2>Latest</h2>
-      <div class="latestarticle">
-        <ul>
-          <?php foreach ($articles as $article) { ?>
-          <li>
-            <h3><a href="article.php?id=<?php echo $article['id']; ?>">
-              <?php echo $article['titel']; ?>
-            </a></h3>
-            <p><?php echo $article['shorttext']; ?></p>
-            <a href="article.php?id=<?php echo $article['id']; ?>">Weiterlesen...</a></br>
-            <small>Erstellt am: <?php echo date('d m Y', $article['created']) ?></small>
-          </li>
-        <?php } ?>
-      </ul>
-      </div>
+  -->
+  <div class="latest">
+    <div class="latestarticle">
+        <?php foreach ($articles as $article) { ?>
+          <div class="article">
+          <div class="articleheader">
+            <div class="articlepic"> <a href="article.php?id=<?php echo $article['id']; ?>"><img src="uploads/images/<?php echo ($article['articleimage']); ?>" alt="frontpic" class="frontpictech"></a> </div>
+            <div class="articletitel"> <a href="article.php?id=<?php echo $article['id']; ?>"> <?php echo $article['titel']; ?> </a> </div>
+          </div>
+          <div class="articletext"> <p><?php echo $article['shorttext']; ?></p> </div>
+          <div class="articlereadmore"> <?php if(isset($article['contenttext'])) { ?> <a href="article.php?id=<?php echo $article['id']; ?>">Weiterlesen...</a> <?php } ?> </div>
+          <div class="articlecreated"> <small>Created: <?php echo date('d m Y', $article['created']) ?></small> </div>
+          <div class="articleedited"> <?php if(isset($article['edited'])) { ?> <small>Edited: <?php echo date('d m Y', $article['edited']) ?></small> <?php } ?> </div>
+          </br>
+        </div>
+      <?php } ?>
     </div>
-
+  </div>
 <?php include_once('./includes/footer.php') ?>

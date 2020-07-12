@@ -14,6 +14,9 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
 <body>
+  <?php
+    include_once("onlinecounter.php")
+   ?>
 <div class="wrapper">
   <header>
     <div class="logo"><a href="index.php">IT-Sammlung</a></div>

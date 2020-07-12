@@ -80,7 +80,75 @@ nav ul li a:hover {
   display: none;
 }
 
+.article pre {
+  white-space: pre-wrap; /* CSS 2.1 */
+  white-space: -moz-pre-wrap; /* Mozilla */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word;
+}
+
+
+
+.frontpic {
+  width: 250px;
+
+
+}
+
+.frontpictech {
+  width: 80px;
+  height: 50px;
+}
+
+.latestarticle {
+
+}
+
+.article {
+  border-bottom: 1px dashed white;
+  margin-bottom: 20px;
+}
+
+.articleheader {
+
+}
+
+.articlepic {
+  height: 50px;
+  float: left;
+}
+
+.articletitel {
+  height: 50px;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.articletitel a {
+  font-size: 25px;
+}
+
+.articletext {
+
+}
+
+.articletext p {
+  margin: 0;
+}
+
+.articlereadmore {
+
+}
+
+.articlecreated {
+
+}
+
+.articleedited {
+
+}
+
 footer {
-  margin-top: 200px;
-  border-top: 1px solid white;
+  margin-top: 50px;
 }
