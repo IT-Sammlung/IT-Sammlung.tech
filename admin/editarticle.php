@@ -70,12 +70,8 @@ if (isset($_SESSION['logged_in'])) {
           <textarea name="articlecategory" rows="1" cols="30" id="articlecategory" placeholder="<?php echo $data['category'] ?>"></textarea></br>
           <input type="submit" name="submitcateory" value="Submit">
         </form>
+      <?php } ?>
 <!-- End part -->
-        <?
-      } else {
-        echo "Bitte Artikel auswählen!";
-      }
-      ?>
 <?php include_once('footeradmin.php') ?>
 <?php
 } else {

@@ -16,7 +16,7 @@ $articles = $article->articles_blog_desc();
           <div class="articletitel"> <a href="article.php?id=<?php echo $article['id']; ?>"> <?php echo $article['titel']; ?> </a> </div>
         </div>
         <div class="articletext"> <p><?php echo $article['shorttext']; ?></p> </div>
-        <div class="articlereadmore"> <?php if(isset($article['contenttext'])) { ?> <a href="article.php?id=<?php echo $article['id']; ?>">Weiterlesen...</a> <?php } ?> </div>
+        <div class="articlereadmore"> <?php if($article['contenttext'] !== "") { ?> <a href="article.php?id=<?php echo $article['id']; ?>">Weiterlesen...</a> <?php } ?> </div>
         <div class="articlecreated"> <small>Created: <?php echo date('d m Y', $article['created']) ?></small> </div>
         <div class="articleedited"> <?php if(isset($article['edited'])) { ?> <small>Edited: <?php echo date('d m Y', $article['edited']) ?></small> <?php } ?> </div>
         </br>
