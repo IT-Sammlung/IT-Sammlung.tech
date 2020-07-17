@@ -1,11 +1,8 @@
 $(document).ready(function(){
-  $("#kategorien").click(function(){
-    $("#navtechkat").fadeToggle("slow");
-  });
+
+
+$("#hamburger").click(function(){
+    $("#navlist").slideToggle();
 });
 
-$(document).ready(function(){
-  $("#alphabet").click(function(){
-    $("#navtechalpha").fadeToggle("slow");
-  });
 });

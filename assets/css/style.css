@@ -18,7 +18,6 @@ ul {
 
 a {
   text-decoration: none;
-  color: white;
 }
 
 a:hover {
@@ -26,46 +25,90 @@ a:hover {
 }
 
 body {
-  background-color: black;
-  color: white;
+  color: black;
+  margin: 0;
+  font-family: "Segoe UI";
+  background-color: #F3FFF0;
 }
 
-header {
+#header {
   width: 100%;
   display: inline-block;
-  font-size: 22px;
-  border-bottom: 1px solid violet;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  position: fixed;
+  top: 0;
+  font-size: 26px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  background-color: #009688;
+  margin-bottom: 10px;
 }
 
 .logo {
   float: left;
+  font-weight: bold;
+  padding-top: 5px;
 }
 
-nav {
-  float: left;
+.logo a {
+  color: white;
 }
 
-nav ul {
 
+
+#nav ul li a {
+    font-family: "Segoe UI";
+    color: white;
 }
 
-nav ul li {
+#hamburger {
+  display: inline-block;
+  float: right;
+  padding-right: 50px;
+  position: relative;
+  color: white;
+  font-size: 36px;
+}
+
+.logoimage {
+  width: 16px;
+  height: 16px;
+  display: none;
+}
+
+#nav {
+}
+
+#nav ul {
+  clear: both;
+}
+
+#nav ul li {
   display: inline;
-  margin-left: 20px;
+  padding: 0;
+  margin: 0;
 }
 
-nav ul li a {
+#nav ul li a {
+  display: block;
+  padding-left: 5px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+
+#nav ul li a:hover {
 
 }
 
-nav ul li a:hover {
-
+#navlist {
+  display: none;
 }
 
-#main {
-
+main {
+  margin-top: -4px;
+  padding-top: 80px;
 }
 
 .navtech {
@@ -88,17 +131,15 @@ nav ul li a:hover {
   word-wrap: break-word;
 }
 
-
-
 .frontpic {
-  width: 250px;
-
+  width: 100%;
 
 }
 
 .frontpictech {
   width: 80px;
   height: 50px;
+  border-radius: 15px 0px 0px 0px;
 }
 
 .latestarticle {
@@ -106,49 +147,128 @@ nav ul li a:hover {
 }
 
 .article {
-  border-bottom: 1px dashed white;
-  margin-bottom: 20px;
+  margin-top: 3px;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-radius: 15px 15px 10px 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #E2FFFA;
+  padding-bottom: 5px;
+}
+
+.article h3 {
+  padding-left: 5px;
+  padding-bottom: 5px;
+  color: #009688;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0;
 }
 
 .articleheader {
-
+  border-bottom: 1px solid black;
 }
 
 .articlepic {
   height: 50px;
   float: left;
+  padding-right: 5px;
 }
 
 .articletitel {
   height: 50px;
   display: table-cell;
   vertical-align: bottom;
+  padding-bottom: 5px;
+
 }
 
 .articletitel a {
-  font-size: 25px;
+  font-size: 16px;
+  color: #009688;
+  font-weight: bold;
 }
 
 .articletext {
-
+  padding-right: 20px;
 }
 
 .articletext p {
   margin: 0;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .articlereadmore {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
 
+.articlereadmore a {
+  color: #009688;
+  font-weight: bold;
 }
 
 .articlecreated {
-
+  font-size: 14px;
+  color: darkgray;
+  padding-left: 10px;
 }
 
 .articleedited {
-
+  font-size: 14px;
+  color: darkgray;
+  padding-left: 10px;
 }
 
-footer {
+#contentcode {
+  background-color: #F6FFFE;
+  border: 1px solid black;
+  border-radius: 5px 5px 5px 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+#contentcodetitel {
+  margin: 0;
+  padding-left: 5px;
+}
+
+#shorttext {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#contenttext {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#footer {
   margin-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline-block;
+  width: 100%;
+  border-top: 1px solid #009688;
+}
+
+.footer3 {
+  float: left;
+  width: 33.3%;
+  color: #009688;
+}
+
+.footer3middle {
+  padding-left: 15px;
+}
+
+.footer3 a {
+  color: #009688;
 }
