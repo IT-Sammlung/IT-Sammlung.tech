@@ -76,6 +76,30 @@ body {
   display: none;
 }
 
+.navadminback {
+  padding-top: 12px;
+}
+
+.admincontent {
+  padding-left: 10px;
+}
+
+.navadminback a {
+  font-family: "Segoe UI";
+  color: white;
+  font-size: 16px;
+  margin-left: 50px;
+}
+
+.login {
+  padding-left: 10px;
+}
+
+.login input {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
 #nav {
 }
 
@@ -186,10 +210,20 @@ main {
 
 }
 
+#pin {
+  width: 16px;
+  height: 16px;
+}
+
 .articletitel a {
   font-size: 16px;
   color: #009688;
   font-weight: bold;
+}
+
+.articletitel img {
+  width: 16px;
+  height: 16px;
 }
 
 .articletext {
@@ -220,6 +254,12 @@ main {
 }
 
 .articleedited {
+  font-size: 14px;
+  color: darkgray;
+  padding-left: 10px;
+}
+
+.articlecategory {
   font-size: 14px;
   color: darkgray;
   padding-left: 10px;

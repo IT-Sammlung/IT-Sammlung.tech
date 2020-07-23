@@ -14,12 +14,8 @@
 </head>
 <body>
 <div class="wrapper">
-  <header>
+  <div id="header">
     <div class="logo"><a href="index.php">Admin-Panel</a></div>
-    <nav>
-      <ul>
-        <li><a href="../index.php">Frontend</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div class="navadminback"><a href="../index.php">Frontend</a></div>
+  </div>
   <main>

@@ -3,7 +3,7 @@
   <div class="footer3">
     <ul>
       <li><a target="_blank" href="https://github.com/IT-Sammlung/IT-Sammlung.tech">Source Code</a></li>
-      <li>v0.3</li>
+      <li>v0.3.1</li>
     </ul>
   </div>
   <div class="footer3 footer3middle">
@@ -13,7 +13,7 @@
   </div>
 <div class="footer3">
     <ul>
-      <li><?php echo onlinecounter() . " Online"; ?></li>
+      <li><?php echo onlinecounter() . " Activity"; ?></li>
       <li><?php echo totalhits() . " Total Hits"; ?></li>
     </ul>
 </div>

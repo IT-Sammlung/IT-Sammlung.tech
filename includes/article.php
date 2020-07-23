@@ -24,6 +24,14 @@ class Article {
       return $query->fetchAll();
     }
 
+    /* /gives articles for /index.php */
+      public function articles_front_last_desc() {
+        global $pdo;
+        $query = $pdo->prepare("SELECT * FROM article WHERE category = 'tech' OR category = 'blog' ORDER BY id DESC");
+        $query->execute();
+        return $query->fetchAll();
+      }
+
     /* /gives articles for /blog.php */
       public function articles_blog_desc() {
         global $pdo;
