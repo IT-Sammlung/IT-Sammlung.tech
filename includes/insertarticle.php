@@ -43,8 +43,9 @@ if ($uploadOk == 0) {
 
 /* Insert Article into Database */
 $time=time();
-$sql = "INSERT INTO article (titel, shorttext, contenttext, contentcode, category, articleimage, created)
-VALUES ('$_POST[articletitel]', '$_POST[articleshorttext]', '$_POST[articlecontenttext]', '$_POST[articlecode]', '$_POST[articlecategory]', '$filename', '$time')";
+$sourcecode = htmlspecialchars($_POST['articlecode']);
+$sql = "INSERT INTO article (titel, shorttext, contenttext, category, articleimage, created)
+VALUES ('$_POST[articletitel]', '$_POST[articleshorttext]', '$_POST[articlecontenttext]', '$_POST[articlecategory]', '$filename', '$time')";
 $pdo->exec($sql);
 header('Location: ../admin/index.php');
 ?>

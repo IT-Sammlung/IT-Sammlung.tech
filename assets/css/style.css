@@ -1,3 +1,5 @@
+/** General Settings **/
+/**  **/
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -31,15 +33,30 @@ body {
   background-color: #F3FFF0;
 }
 
+.adminwrapper {
+  padding-left: 10px;
+}
+
+
+/** HEADER **/
+
+#wartung {
+  background-color: yellow;
+  display: none;
+}
+
+#wartung p {
+  margin: 0;
+  font-size: 16px;
+}
+
 #header {
   width: 100%;
   display: inline-block;
   position: fixed;
   top: 0;
   font-size: 26px;
-  padding-top: 20px;
   padding-bottom: 15px;
-  padding-left: 10px;
   background-color: #009688;
   margin-bottom: 10px;
 }
@@ -47,18 +64,13 @@ body {
 .logo {
   float: left;
   font-weight: bold;
-  padding-top: 5px;
+  padding-top: 25px;
+  padding-left: 10px;
 }
 
 .logo a {
   color: white;
-}
 
-
-
-#nav ul li a {
-    font-family: "Segoe UI";
-    color: white;
 }
 
 #hamburger {
@@ -68,6 +80,7 @@ body {
   position: relative;
   color: white;
   font-size: 36px;
+  padding-top: 20px;
 }
 
 .logoimage {
@@ -76,8 +89,37 @@ body {
   display: none;
 }
 
+#nav {
+  display: none;
+  width: 100%;
+  overflow: hidden;
+  padding-left: 10px;
+}
+
+#subnav {
+}
+
+#subnavcontent {
+  display: none;
+}
+
+#nav a {
+    font-family: "Segoe UI";
+    color: white;
+    display: block;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+#nav p {
+    font-family: "Segoe UI";
+    color: white;
+    margin: 0;
+}
+
 .navadminback {
-  padding-top: 12px;
+  padding-top: 35px;
 }
 
 .admincontent {
@@ -91,6 +133,8 @@ body {
   margin-left: 50px;
 }
 
+/** LOGIN **/
+
 .login {
   padding-left: 10px;
 }
@@ -100,37 +144,9 @@ body {
   margin-bottom: 5px;
 }
 
-#nav {
-}
+/** MAIN **/
 
-#nav ul {
-  clear: both;
-}
-
-#nav ul li {
-  display: inline;
-  padding: 0;
-  margin: 0;
-}
-
-#nav ul li a {
-  display: block;
-  padding-left: 5px;
-  padding-right: 50px;
-  padding-top: 10px;
-  padding-bottom: 15px;
-  font-size: 20px;
-}
-
-#nav ul li a:hover {
-
-}
-
-#navlist {
-  display: none;
-}
-
-main {
+#main {
   margin-top: -4px;
   padding-top: 80px;
 }
@@ -139,13 +155,7 @@ main {
   background-color: gray;
 }
 
-#navtechkat {
-  display: none;
-}
 
-#navtechalpha {
-  display: none;
-}
 
 .article pre {
   white-space: pre-wrap; /* CSS 2.1 */
@@ -290,6 +300,10 @@ main {
   padding-right: 5px;
 }
 
+#contenttext a {
+  color: #009688;
+}
+
 #footer {
   margin-top: 50px;
   padding-left: 10px;
@@ -311,4 +325,13 @@ main {
 
 .footer3 a {
   color: #009688;
+}
+
+
+
+/* Desktop View */
+@media only screen and (min-width: 900px) {
+  .article {
+    width: 800px;
+  }
 }

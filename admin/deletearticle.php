@@ -29,6 +29,7 @@ if (isset($_SESSION['logged_in'])) {
 
 <!-- Dropdown form with all objects from the array -->
 <?php include_once('headeradmin.php') ?>
+  <div class="adminwrapper">
     <h3>Artikel Löschen</h3>
       <form action="deletearticle.php" method="get">
         <select name="id">
@@ -38,7 +39,7 @@ if (isset($_SESSION['logged_in'])) {
         </select>
         <input type="submit" value="submit">
       </form>
-
+    </div>
 <!-- Footer -->
 <?php include_once('footeradmin.php') ?>
 <?php

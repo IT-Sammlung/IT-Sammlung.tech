@@ -13,9 +13,20 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
 <body>
+  <?php
+    include_once("../includes/settings.php");
+   ?>
 <div class="wrapper">
   <div id="header">
+    <div id="wartung"> <p>Seite unter Wartungsarbeiten....</p> </div>
     <div class="logo"><a href="index.php">Admin-Panel</a></div>
     <div class="navadminback"><a href="../index.php">Frontend</a></div>
   </div>
-  <main>
+  <div id="main">
+    <script type="text/javascript">
+    var wartung = <?php echo $wartung; ?>;
+    if(wartung == 1) {
+      document.getElementById("wartung").style.display = "block";
+      document.getElementById("main").style.paddingTop = "90px";
+    }
+    </script>

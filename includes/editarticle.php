@@ -47,13 +47,13 @@ if(isset($_POST['submit'])) {
   if($_FILES['articleimage']['name'] !== ""){
   $time=time();
   $id = $_GET['id'];
-  $sql = "UPDATE article SET titel = '$_POST[articletitel]', shorttext = '$_POST[articleshorttext]', contenttext = '$_POST[articlecontenttext]', contentcode = '$_POST[articlecode]', articleimage = '$filename', edited = $time WHERE id = $id";
+  $sql = "UPDATE article SET titel = '$_POST[articletitel]', shorttext = '$_POST[articleshorttext]', contenttext = '$_POST[articlecontenttext]', articleimage = '$filename', edited = $time WHERE id = $id";
   $pdo->exec($sql);
 }
 if($_FILES['articleimage']['name'] == ""){
 $time=time();
 $id = $_GET['id'];
-$sql = "UPDATE article SET titel = '$_POST[articletitel]', shorttext = '$_POST[articleshorttext]', contenttext = '$_POST[articlecontenttext]', contentcode = '$_POST[articlecode]', edited = $time WHERE id = $id";
+$sql = "UPDATE article SET titel = '$_POST[articletitel]', shorttext = '$_POST[articleshorttext]', contenttext = '$_POST[articlecontenttext]', edited = $time WHERE id = $id";
 $pdo->exec($sql);
 }
 }

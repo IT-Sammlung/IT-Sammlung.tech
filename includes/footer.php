@@ -1,9 +1,9 @@
-</main>
+</div>
 <div id="footer">
   <div class="footer3">
     <ul>
       <li><a target="_blank" href="https://github.com/IT-Sammlung/IT-Sammlung.tech">Source Code</a></li>
-      <li>v0.3.1</li>
+      <li>v0.3.3</li>
     </ul>
   </div>
   <div class="footer3 footer3middle">

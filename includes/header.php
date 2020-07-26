@@ -16,10 +16,12 @@
 </head>
 <body>
   <?php
-    include_once("onlinecounter.php")
+    include_once("onlinecounter.php");
+    include_once("settings.php");
    ?>
 <div class="wrapper">
   <div id="header">
+    <div id="wartung"> <p>Seite unter Wartungsarbeiten....</p> </div>
     <div class="logo">
       <a href="index.php"><img src="./favicon/logo.png" alt="" class="logoimage"></a>
       <a href="index.php">IT-Sammlung</a>
@@ -27,11 +29,22 @@
 <div id="hamburger">
 <i id="hamburgericon" class="fa fa-bars"></i>
 </div>
+<div class="clearfix"></div>
 <div id="nav">
-  <ul id="navlist">
-    <li><a href="tech.php">.tech</a></li>
-    <li><a href="blog.php">Blog</a></li>
-  </ul>
+<div id="subnav">
+  <p>Artikel</p>
+<div id="subnavcontent">
+  <a href="tech.php">.tech</a>
+  <a href="blog.php">Blog</a>
+</div>
+</div>
 </div>
   </div>
-  <main>
+  <div id="main">
+<script type="text/javascript">
+var wartung = <?php echo $wartung; ?>;
+if(wartung == 1) {
+  document.getElementById("wartung").style.display = "block";
+  document.getElementById("main").style.paddingTop = "98px";
+}
+</script>

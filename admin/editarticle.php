@@ -9,9 +9,9 @@ if (isset($_SESSION['logged_in'])) {
   $article = new Article;
   $articles = $article->articles_asc();
 ?>
-
 <!-- Dropdown to select an article / Loop through array -->
 <?php include_once('headeradmin.php') ?>
+<div class="adminwrapper">
     <h3>Artikel auswählen</h3>
       <form action="editarticle.php" method="get">
         <select name="id">
@@ -44,10 +44,6 @@ if (isset($_SESSION['logged_in'])) {
             <p>
                 <textarea rows="5" cols="30" name="articlecontenttext" id="articlecontenttext" placeholder="Inhalt"><?php echo $data['contenttext'] ?></textarea>
             </p>
-            <p>Source Code</p>
-            <p>
-                <textarea rows="5" cols="30" name="articlecode" id="articlecode" placeholder="Source Code"><?php echo $data['contentcode'] ?></textarea>
-            </p>
             <input type="file" name="articleimage" id="articleimage"></br>
             <input type="submit" value="Submit" name="submit">
         </form>
@@ -72,6 +68,7 @@ if (isset($_SESSION['logged_in'])) {
         </form>
       <?php } ?>
 <!-- End part -->
+</div>
 <?php include_once('footeradmin.php') ?>
 <?php
 } else {

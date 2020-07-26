@@ -1,8 +1,15 @@
 $(document).ready(function(){
 
-
+//hamburger click
 $("#hamburger").click(function(){
-    $("#navlist").slideToggle();
+    $("#nav").slideToggle();
 });
+
+//navigation 1st dimension click
+$("#subnav").click(function(){
+    $("#subnavcontent").slideToggle();
+});
+
+
 
 });

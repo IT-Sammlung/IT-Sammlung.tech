@@ -17,13 +17,10 @@ if (isset($_GET['id'])) {
 <?php include_once('./includes/header.php') ?>
 <div class="article">
   <h3><?php echo $data['titel'] ?></h3>
+  <a href="#"></a>
     <img src="uploads/images/<?php echo ($data['articleimage']); ?>" alt="frontpic" class="frontpic">
     <h4 id="shorttext"><?php echo nl2br($data['shorttext']);?></h4>
     <p id ="contenttext"><?php echo nl2br($data['contenttext']); ?></p>
-    <?php if (!empty($data['contentcode'])) { ?>
-      <h4 id="contentcodetitel">Quellcode: </h4>
-      <pre id="contentcode"><?php echo ($data['contentcode']); ?></pre>
-      <?php } ?>
     <small class="articlecreated">Created: <?php echo date('d m Y', $data['created']) ?></small></br>
     <?php if(isset($data['edited'])) { ?>
     <small class="articleedited">Edited: <?php echo date('d m Y', $data['edited']) ?></small>
