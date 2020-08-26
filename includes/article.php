@@ -19,7 +19,7 @@ class Article {
   /* /gives articles for /index.php */
     public function articles_front_desc() {
       global $pdo;
-      $query = $pdo->prepare("SELECT * FROM article WHERE category = 'front' ORDER BY id DESC");
+      $query = $pdo->prepare("SELECT * FROM article WHERE category = 'front' ORDER BY id DESC LIMIT 1");
       $query->execute();
       return $query->fetchAll();
     }
@@ -64,5 +64,12 @@ class Article {
     $query->execute();
     return $query->fetch();
   }
+  /* /gives articles for /tech.php */
+    public function test() {
+      global $pdo;
+      $query = $pdo->prepare("SELECT * FROM totalhits");
+      $query->execute();
+      return $query->fetchAll();
+    }
 }
  ?>

@@ -1,7 +1,7 @@
 <?php
 session_start();
 include_once('../includes/datacon.php');
-if (isset($_SESSION['logged_in'])) {
+if (isset($_SESSION['loginAdmin'])) {
 ?>
 
 <?php include_once('headeradmin.php') ?>

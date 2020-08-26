@@ -1,7 +1,7 @@
 <?php
 session_start();
 include_once('../includes/datacon.php');
-if (isset($_SESSION['logged_in'])) {
+if (isset($_SESSION['loginAdmin'])) {
   ?>
 
 <?php include_once('headeradmin.php') ?>
@@ -32,7 +32,7 @@ if (isset($_SESSION['logged_in'])) {
       $num=$query->rowCount();
 
       if ($num == 1) {
-        $_SESSION['logged_in'] = true;
+        $_SESSION['loginAdmin'] = true;
         header('Location: index.php');
         exit();
       } else {

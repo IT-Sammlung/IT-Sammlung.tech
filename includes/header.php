@@ -19,9 +19,10 @@
     include_once("onlinecounter.php");
     include_once("settings.php");
    ?>
-<div class="wrapper">
+<div id="wrapper">
   <div id="header">
     <div id="wartung"> <p>Seite unter Wartungsarbeiten....</p> </div>
+    <div class="desktopview">
     <div class="logo">
       <a href="index.php"><img src="./favicon/logo.png" alt="" class="logoimage"></a>
       <a href="index.php">IT-Sammlung</a>
@@ -31,15 +32,28 @@
 </div>
 <div class="clearfix"></div>
 <div id="nav">
-<div id="subnav">
-  <p>Artikel</p>
-<div id="subnavcontent">
-  <a href="tech.php">.tech</a>
-  <a href="blog.php">Blog</a>
+<div class="subnav">
+  <p class="navP">Artikel</p>
+<div class="subnavcontent">
+  <a class="navA" href="tech.php">.tech</a>
+  <a class="navA" href="blog.php">Blog</a>
+</div>
+</div>
+<div class="subnav2">
+  <p class="navP">Demos</p>
+<div class="subnavcontent2">
+  <a class="navA" href="analytics.php">Analytics</a>
+  <a class="navA" href="chat.php" target="_blank">Chat</a>
+  <a class="navA" href="eth.php">Web3-JS</a>
+</div>
+</div>
+<div>
+  <a class="navPmain" href="showcase.php">Showcase</a>
 </div>
 </div>
 </div>
   </div>
+  <div id="particles-js"></div>
   <div id="main">
 <script type="text/javascript">
 var wartung = <?php echo $wartung; ?>;

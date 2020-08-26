@@ -3,7 +3,7 @@
 session_start();
 include_once('../includes/datacon.php');
 include_once("../includes/article.php");
-if (isset($_SESSION['logged_in'])) {
+if (isset($_SESSION['loginAdmin'])) {
 
 // create array with sql statement select * from article ascending to give it the dropdown menu
   $article = new Article;

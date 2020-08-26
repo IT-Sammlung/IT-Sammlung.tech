@@ -3,7 +3,7 @@
 session_start();
 include_once('../includes/datacon.php');
 include_once("../includes/article.php");
-if (isset($_SESSION['logged_in'])) {
+if (isset($_SESSION['loginAdmin'])) {
 
 // create new array from select * from article ascending
   $article = new Article;
